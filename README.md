@@ -1,8 +1,15 @@
 # default_next_project
 
-NEXT.js Framwork's Default Project Setting & Example
+<strong>NEXT.js Framwork's Default Project Setting & Example</strong>
+
 ver. 2022.09.11
 Jaeyun Jung
+
+<br/>
+
+<strong>👇22.09.13 Geeksloft NEXT.JS Seminar 자료👇</strong>
+
+[⚛notion link](https://www.notion.so/Next-js-8fe4a8ff45764571a2ff149d97998b7e)
 
 
 # NEXT JS 실행 및 빌드 방법(22.09.12ver)
