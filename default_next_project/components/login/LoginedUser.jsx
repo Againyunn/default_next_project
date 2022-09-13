@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 
 // redux connect
 import { useSelector, useDispatch } from "react-redux";
-import { userLogout } from "../../store/reduxSlicer/user";
+import { userLogout } from "@/store/reduxSlicer/user";
 
 // bootstrap css
 import { Button } from "react-bootstrap";
 
 // login css
-import styles from "@/styles/user/login.module.css";
+import styles from "@/styles/css/login.module.css";
 
 function LoginedUser() {
   const [loginedUser, setLoginedUser] = useState(false);
@@ -36,7 +36,7 @@ function LoginedUser() {
     }
 
     return (
-      <div className="user-data-wrap">
+      <div className={styles.userDataWrap}>
         <hr />
         <div className={styles.userDataBlock}>
           <span className={styles.userDataLabel}>아이디</span>

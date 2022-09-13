@@ -10,7 +10,7 @@ import { useDispatch } from "react-redux";
 import { userLogin } from "@/store/reduxSlicer/user";
 
 // login css
-import style from "@/styles/user/login.module.css";
+import style from "@/styles/css/login.module.css";
 
 // bootstrap
 import { Form, Button } from "react-bootstrap";
