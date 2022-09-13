@@ -6,9 +6,16 @@ const nextConfig = {
 
 module.exports = nextConfig;
 
-// module.exports = {
-//   experimental: {
-//     // Enables the styled-components SWC transform
-//     styledComponents: true,
-//   },
-// };
+// CORS 에러 방지용 프록시 설정
+module.exports = (phase, { defaultConfig }) => {
+  const rewrites = () => {
+    return [
+      {
+        source: "/:path*",
+        destination: process.env.NEXT_PUBLIC_API_URL + "/:path*",
+      },
+    ];
+  };
+
+  return { rewrites };
+};

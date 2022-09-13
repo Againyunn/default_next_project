@@ -1,6 +1,9 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
+
+import styled from "styled-components";
 
 function PlainReactLaunches({ data }) {
+  //  // client side rendering
   //   const [data, setData] = useState(null);
 
   //   useEffect(() => {
@@ -19,7 +22,7 @@ function PlainReactLaunches({ data }) {
   }
 
   return (
-    <div>
+    <LaunchWrap>
       <ul>
         {data.map((launch, index) => (
           <li key={index}>
@@ -27,11 +30,23 @@ function PlainReactLaunches({ data }) {
           </li>
         ))}
       </ul>
-    </div>
+    </LaunchWrap>
   );
 }
 
 export default PlainReactLaunches;
+
+const LaunchWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  background-color: #00d7ff;
+  color: #fff;
+
+  li {
+    margin-left: 100px;
+    list-style: none;
+  }
+`;
 
 // // SSR 적용
 // export async function getServerSideProps(context) {

@@ -55,6 +55,7 @@
 }
 .userDataBlock .userDataLabel {
   font-weight: bold;
+  margin-right: 10px;
 }
 
 .logWrap {
