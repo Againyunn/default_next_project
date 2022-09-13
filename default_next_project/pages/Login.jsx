@@ -7,7 +7,7 @@ import AuthService from "@/services/auth/authApi";
 
 // redux connect
 import { useDispatch } from "react-redux";
-import { userLogin } from "@/store/reduxSlicer/user";
+import { userLogin } from "@/store/reduxSlicers/user";
 
 // login css
 import style from "@/styles/css/login.module.css";

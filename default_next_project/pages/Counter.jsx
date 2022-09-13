@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import * as counterActions from "@/store/reduxSlicer/counter";
+import * as counterActions from "@/store/reduxSlicers/counter";
 
 export default function Test() {
   const dispatch = useDispatch();

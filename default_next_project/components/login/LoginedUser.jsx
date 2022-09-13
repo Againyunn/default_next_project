@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 // redux connect
 import { useSelector, useDispatch } from "react-redux";
-import { userLogout } from "@/store/reduxSlicer/user";
+import { userLogout } from "@/store/reduxSlicers/user";
 
 // bootstrap css
 import { Button } from "react-bootstrap";
@@ -20,7 +20,7 @@ function LoginedUser() {
   });
 
   useEffect(() => {
-    console.log("thisLoginedUser", thisLoginedUser);
+    // console.log("thisLoginedUser", thisLoginedUser);
     //사용자 검색 시
     if (thisLoginedUser === false) {
       setLoginedUser(false);

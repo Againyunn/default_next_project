@@ -16,7 +16,7 @@ function MainPage() {
   const router = useRouter();
 
   let thisLoginedUser = useSelector((state) => {
-    console.log("state.user", state.user);
+    // console.log("state.user", state.user);
     return state.user.thisUser;
   });
 

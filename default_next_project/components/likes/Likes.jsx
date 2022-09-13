@@ -4,7 +4,7 @@ import Image from "next/image";
 
 // redux connect
 import { useSelector, useDispatch } from "react-redux";
-import { plusFuntion } from "@/store/reduxSlicer/like";
+import { plusFuntion } from "@/store/reduxSlicers/like";
 
 function Likes(props) {
   const [thisNumber, setThisNumber] = useState(0);
