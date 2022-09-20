@@ -1,21 +1,21 @@
-// import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import styled from "styled-components";
 
-function PlainReactLaunches({ data }) {
-  //  // client side rendering
-  //   const [data, setData] = useState(null);
+function PlainReactLaunches() {
+  // client side rendering
+  const [data, setData] = useState(null);
 
-  //   useEffect(() => {
-  //     fetchLaunches();
-  //   }, []);
+  useEffect(() => {
+    fetchLaunches();
+  }, []);
 
-  //   const fetchLaunches = async () => {
-  //     const res = await fetch("https://api.spacexdata.com/v3/launches");
-  //     const data = await res.json();
+  const fetchLaunches = async () => {
+    const res = await fetch("https://api.spacexdata.com/v3/launches");
+    const data = await res.json();
 
-  //     setData(data);
-  //   };
+    setData(data);
+  };
 
   if (data == null) {
     return null;
@@ -60,14 +60,14 @@ const LaunchWrap = styled.div`
 //   };
 // }
 
-// Cached SSR 적용
-export async function getStaticProps(context) {
-  const res = await fetch("https://api.spacexdata.com/v3/launches");
-  const data = await res.json();
+// // Cached SSR 적용
+// export async function getStaticProps(context) {
+//   const res = await fetch("https://api.spacexdata.com/v3/launches");
+//   const data = await res.json();
 
-  console.log("getServerSideProps");
+//   console.log("getServerSideProps");
 
-  return {
-    props: { data }, // will be passed to the page component as props
-  };
-}
+//   return {
+//     props: { data }, // will be passed to the page component as props
+//   };
+// }
